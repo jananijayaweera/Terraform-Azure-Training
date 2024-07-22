@@ -5,6 +5,11 @@
 *.tfstate
 *.tfstate.*
 
+# ignore ssh keys
+
+*.pem
+*.pub
+
 # Crash log files
 crash.log
 crash.*.log

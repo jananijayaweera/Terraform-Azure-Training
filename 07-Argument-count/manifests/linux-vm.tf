@@ -10,7 +10,7 @@ resource "azurerm_linux_virtual_machine" "demolinuxvm" {
   network_interface_ids = [ element(azurerm_network_interface.vmnic[*].id, count.index)]  
   admin_ssh_key {
     username   = "localadmin"
-    public_key = file("${path.module}/ssh-keys/vm-ssh-key.pub")
+    public_key = file("${path.module}/ssh-keys/vm-ssh-key.pub") # specify the path to the public key and make sure to change the path accordingly
   }
   os_disk {
     name = "osdisk${count.index}"
