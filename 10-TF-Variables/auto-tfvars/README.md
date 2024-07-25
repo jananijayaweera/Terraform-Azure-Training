@@ -1,19 +1,9 @@
 ## Step-01: Introduction
-- Provide Input Variables using `terraform.tfvars` files
+- Provide Input Variables using `auto.tfvars` files
 
-## Step-02: Assign Input Variables from terraform.tfvars
-- Create a file named `terraform.tfvars` and define variables
-- If the file name is `terraform.tfvars`, terraform will auto-load the variables present in this file by overriding the `default` values in `c2-variables.tf`
-```t
-business_unit = "it"
-environment = "stg"
-resoure_group_name = "rg-tfvars"
-resoure_group_location = "southeastasia"
-virtual_network_name = "vnet-tfvars"
-subnet_name = "subnet-tfvars"
-```
-
-## Step-03: Execute Terraform Commands
+## Step-02: Auto load input variables with .auto.tfvars files
+- We will create a file with extension as `.auto.tfvars`. 
+- With this extension, whatever may be the file name, the variables inside these files will be auto loaded during `terraform plan or apply`
 ```t
 # Initialize Terraform
 terraform init
@@ -25,5 +15,8 @@ terraform validate
 terraform fmt
 
 # Review the terraform plan
-terraform plan
+terraform plan 
+
+# Terraform Apply
+terraform apply
 ```
