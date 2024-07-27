@@ -22,8 +22,8 @@ variable "virtual_network_address_space" {
 ```t
 business_unit = "it"
 environment = "dev"
-resoure_group_name = "rg-list"
-resoure_group_location = "southeastasia"
+resource_group_name = "rg-list"
+resource_group_location = "southeastasia"
 virtual_network_name = "vnet-list"
 subnet_name = "subnet-list"
 virtual_network_address_space = ["10.3.0.0/16", "10.4.0.0/16", "10.5.0.0/16"]
@@ -33,10 +33,9 @@ virtual_network_address_space = ["10.3.0.0/16", "10.4.0.0/16", "10.5.0.0/16"]
 ```t
 resource "azurerm_virtual_network" "myvnet" {
   name                = "${var.business_unit}-${var.environment}-${var.virtual_network_name}"
-  #address_space      = ["10.0.0.0/16"]
   address_space       = var.virtual_network_address_space
-  location            = azurerm_resource_group.myrg.location
-  resource_group_name = azurerm_resource_group.myrg.name
+  location            = azurerm_resource_group.rg.location
+  resource_group_name = azurerm_resource_group.rg.name
 }
 ```
 
@@ -45,8 +44,8 @@ resource "azurerm_virtual_network" "myvnet" {
 resource "azurerm_subnet" "mysubnet" {
   #name                 = var.subnet_name
   name                 = "${azurerm_virtual_network.myvnet.name}-${var.subnet_name}"
-  resource_group_name  = azurerm_resource_group.myrg.name
-  virtual_network_name = azurerm_virtual_network.myvnet.name
+  resource_group_name  = azurerm_resource_group.rg.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = ["10.3.0.0/24"]
 }
 ```
