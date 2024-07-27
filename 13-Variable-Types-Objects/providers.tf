@@ -13,14 +13,14 @@ terraform {
   }
 }
 
+
 # Provider Block
 provider "azurerm" {
   features {}
 }
 
-# Random String Resource
 resource "random_string" "random" {
-  length  = 6
+  length  = 4
   upper   = false
   special = false
   numeric = true
