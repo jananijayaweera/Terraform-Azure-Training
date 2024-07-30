@@ -2,10 +2,6 @@
 ## Step-1: Introduction
 - Understand about Datasources in Terraform
 - Implement a sample usecase with Datasources.
-1. Datasource [azurerm_resource_group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/resource_group)
-2. Datasource [azurerm_virtual_network](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/virtual_network)
-3. Datasource [azurerm_subscription](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/subscription)
-
 
 ## Step-2: Run Bash Shell Script
 

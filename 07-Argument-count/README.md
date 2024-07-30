@@ -1,7 +1,16 @@
-Note :- Befor running the script make sure you have the following ssh key pair generated and the private key and moved to the ssh-keys folder.
+## Pre-requisites - SSH Keys
+- Create SSH Keys for Azure VM Instance if not created
+```t
+# Create Folder
+cd terraform-manifests/
+mkdir ssh-keys
 
-# Generate SSH key pair
-ssh-keygen -t rsa -b 4096
+# Create SSH Key
+cd ssh-ekys
+ssh-keygen -m PEM -t rsa -b 4096 -C "azureuser@myserver" -f terraform-azure.pem 
 
-# Set appropriate permissions for the private key
-chmod 400 /path/to/your/key
+# List Files
+ls -lrt ssh-keys/
+
+# Permissions for Pem file
+chmod 400 terraform-azure.pem
