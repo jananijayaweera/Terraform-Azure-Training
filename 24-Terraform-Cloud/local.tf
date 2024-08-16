@@ -1,0 +1,16 @@
+# Local Values Block
+locals {
+  
+  rg_name = "${var.business_unit}-${terraform.workspace}-${var.resoure_group_name}"
+  vnet_name = "${var.business_unit}-${terraform.workspace}-${var.virtual_network_name}"
+  snet_name = "${var.business_unit}-${terraform.workspace}-${var.subnet_name}"
+  pip_name = "${var.business_unit}-${terraform.workspace}-${var.publicip_name}"
+  
+
+  service_name = "Demo App"
+  owner = "KR"
+  common_tags = {
+    Service = local.service_name
+    Owner   = local.owner
+  }
+}
