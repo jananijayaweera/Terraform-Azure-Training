@@ -6,12 +6,12 @@ resource "azurerm_virtual_network" "myvnet" {
   location            = azurerm_resource_group.demo_rg.location
   resource_group_name = azurerm_resource_group.demo_rg.name
 
-/*
-# Lifecycle Changes for Prevent Destroy
-  lifecycle {
-    prevent_destroy = true
-  }
-*/
+
+# # Lifecycle Changes for Prevent Destroy
+#   lifecycle {
+#     prevent_destroy = true
+#   }
+
 }
 
 /*

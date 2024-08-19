@@ -28,6 +28,7 @@ variable "virtual_network_name" {
   default = "app1"
 }
 
+
 /*
 
 Example:

@@ -5,15 +5,15 @@ resource "azurerm_virtual_network" "myvnet" {
   location            = azurerm_resource_group.demo_rg.location
   resource_group_name = azurerm_resource_group.demo_rg.name
   tags = {
-    "Name" = "VNET-1"
+    "Name" = "VNET-2"
     "Environment" = "Dev12"
   }
-  /*
+
   # Lifecycle Changes
   lifecycle {
     ignore_changes = [ tags, ]
   }
-*/
+
 }
 
 
