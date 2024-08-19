@@ -3,7 +3,7 @@
 
 ## Step-02: Assign Input Variables from terraform.tfvars
 - Create a file named `terraform.tfvars` and define variables
-- If the file name is `terraform.tfvars`, terraform will auto-load the variables present in this file by overriding the `default` values in `c2-variables.tf`
+- If the file name is `terraform.tfvars`, terraform will auto-load the variables present in this file by overriding the `default` values in `variables.tf`
 ```t
 business_unit = "it"
 environment = "stg"
