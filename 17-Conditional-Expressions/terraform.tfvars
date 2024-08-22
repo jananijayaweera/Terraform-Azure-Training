@@ -1,1 +1,1 @@
-environment = "prod" // change the environment to dev or prod to see the conditional expression in action
+environment = "dev" // change the environment to dev or prod to see the conditional expression in action

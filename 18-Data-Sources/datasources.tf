@@ -3,7 +3,7 @@ data "azurerm_resource_group" "storage_rg" {
 }
 
 data "azurerm_storage_account" "storage_account" {
-  name = "tfclass01storage324"
+  name = "tf01storagekasun"
   resource_group_name = data.azurerm_resource_group.storage_rg.name
 }
 

@@ -5,7 +5,7 @@ az login
 # Variables
 export resourceGroupName="tf-class-01-rg"
 export location="southeastasia"
-export storageAccountName="tfclass01storage324"
+export storageAccountName="tf01storagekasun"
 export sku="Standard_LRS"
 
 # Create resource group

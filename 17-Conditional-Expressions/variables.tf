@@ -14,7 +14,7 @@ variable "environment" {
 variable "resource_group_name" {
   description = "Resource Group Name"
   type = string
-  default = "rg-tf-vars-basic"
+  default = "app1"
 }
 variable "resource_group_location" {
   description = "Resource Group Location"

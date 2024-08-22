@@ -32,6 +32,8 @@ For more details, please refer the below following URL.
 
 ![Alt text](/Projects/Create-Windows-VM/images/image.png "Create Windows VM Architecture")
 
+No need to provision the Azure DNS
+
 You will find the completed code in this folder under the answers folder.
 
 
