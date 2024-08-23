@@ -21,7 +21,6 @@ description: Learn Terraform File Provisioner
 - Create SSH Keys for Azure VM Instance if not created
 ```t
 # Create Folder
-cd terraform-manifests/
 mkdir ssh-keys
 
 # Create SSH Key

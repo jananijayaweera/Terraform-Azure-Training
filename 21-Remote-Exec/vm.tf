@@ -10,7 +10,7 @@ resource "azurerm_linux_virtual_machine" "linuxvm" {
   ]
   admin_ssh_key {
     username   = "azureuser"
-    public_key = file("${path.module}/ssh-keys/terraform-azure.pub")
+    public_key = file("${path.module}/ssh-keys/terraform-azure.pem.pub")
   }
   os_disk {
     name = "osdisk${random_string.random.id}"
@@ -28,7 +28,8 @@ resource "azurerm_linux_virtual_machine" "linuxvm" {
 
   connection {
     type = "ssh"
-    host = self.public_ip_address 
+    host = self.public_ip_address
+    user = self.admin_username 
     private_key = file("${path.module}/ssh-keys/terraform-azure.pem")
   }  
 

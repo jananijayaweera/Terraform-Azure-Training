@@ -1,6 +1,7 @@
 # Provider Block
 provider "azurerm" {
   features {}
+  subscription_id = var.subscription_id
 }
 
 # Random String Resource
@@ -11,14 +12,9 @@ resource "random_string" "random" {
   numeric = true
 }
 
-resource "azurerm_resource_group" "resource_group" {
-  name     = var.resource_group_name
-  location = var.location
-}
-
 resource "azurerm_storage_account" "storage_account" {
   name                = "${var.storage_account_name}${random_string.random.id}"
-  resource_group_name = azurerm_resource_group.resource_group.name
+  resource_group_name = var.resource_group_name
 
   location                 = var.location
   account_tier             = var.storage_account_tier

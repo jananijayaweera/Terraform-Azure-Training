@@ -41,6 +41,17 @@ variable "use_for_each" {
   default = true
 }
 
+variable "username" {
+  description = "Username for the VM"
+  type        = string
+  default = "localadmin"
+}
+
+variable "password" {
+  description = "Password for the VM"
+  type        = string
+  default = "Password1234!"
+}
 
 
 

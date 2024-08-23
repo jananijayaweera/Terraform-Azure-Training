@@ -3,10 +3,6 @@ variable "location" {
   description = "The Azure Region in which all resources groups should be created."
   type        = string
 }
-variable "resource_group_name" {
-  description = "The name of the resource group"
-  type        = string
-}
 variable "storage_account_name" {
   description = "The name of the storage account"
   type        = string
@@ -32,3 +28,12 @@ variable "static_website_error_404_document" {
   type        = string
 }
 
+variable "subscription_id" {
+  description = "The Azure Subscription ID"
+  type        = string
+}
+
+variable "resource_group_name" {
+  description = "The name of the resource group"
+  type        = string
+}
