@@ -19,9 +19,9 @@ This project is a simple example of how to build a CI/CD pipeline using Azure De
 
 What do you need to crate from Terraform is using the following diagram and use Azure DevOps to store the Terraform code and use Terraform Cloud to deploy the infrastructure to Azure.
 
-[![Azure Web App and MySql Database](../Images/scalable-web-and-mobile-applications-using-azure-database-for-mysql.png)]
+![Azure Web App and MySql Database](../Images/scalable-web-and-mobile-applications-using-azure-database-for-mysql.png)
 
-
+You can use Terraform documentation to create the manifests and use Terraform cloud documentation to create the workspace and connect it to Azure DevOps.
 
 ## Steps
 
