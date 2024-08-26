@@ -30,7 +30,7 @@ For more details, please refer the below following URL.
 
 [Create Windows VM via Terraform](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/windows-vm)
 
-![Alt text](/Projects/Create-Windows-VM/images/image.png "Create Windows VM Architecture")
+![Alt text](../Images/image.png "Create Windows VM Architecture")
 
 No need to provision the Azure DNS
 
